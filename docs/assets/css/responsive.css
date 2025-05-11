@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+@media (max-width: 768px) {
+
+    /* header & mv */
+    header {
+        background-size: auto;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 768 / 697;
+        height: 80%;
+    }
+
+    .slider .slide1 img,
+    .slider .slide2 img,
+    .slider .slide3 img,
+    .slider .slide4 img {
+        width: 125%;
+    }
+
+    .mv_area {
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+
+
+
+    /* footer */
+    footer {
+        height: 20vw;
+    }
+
+    footer .footer_logo {
+        margin-top: 0;
+        margin-bottom: 10%;
+        width: 8vw;
+        height: auto;
+    }
+
+    footer .insta_icon {
+        width: 2.5vw;
+        height: auto;
+        margin: 10%;
+    }
+
+    footer {
+        font-size: 1vw;
+    }
+
+
+}

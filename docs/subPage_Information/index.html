@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" content="noindex">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Rosalie(ロザリー)のインフォメーションページでは、店舗の最新ニュースやお知らせ、定休日、花に関するコラムをブログ形式でご紹介しています。新しい花の入荷情報やイベントの案内、スタッフのコラムなど、皆様に役立つ情報をお届けします。" />
+  <meta name="keywords" content="Rosalie, インフォメーション, ニュース, お知らせ, 定休日, 花のコラム, フラワーショップ, 店舗ニュース, お休み情報, 花についての情報" />
+  <title>Rosalie - Information</title>
+
+  <link rel="icon" href="../favicon.ico" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon-180x180.png" />
+
+  <link rel="stylesheet" href="../assets/css/reset.css" />
+  <link rel="stylesheet" href="../assets/css/common.css" />
+  <link rel="stylesheet" href="../assets/css/information.css" />
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/information.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="inner_01 header_content">
+      <div>
+        <a href="../index.html">
+          <h1 class="flex"><img src="../assets/image/svg/logo_rosalie.svg" alt="ロザリーのロゴ" width="120" height="33">
+          </h1>
+        </a>
+      </div>
+      <div>
+        <a href="#"><img src="../assets/image/svg/icon_shoppingcart_27x23.svg" alt="ショッピングカート" width="27"
+            height="23"></a>
+        <img src="../assets/image/svg/btn_hamburger_52x52.svg" alt="ハンバーガーボタン" width="52" height="52" class="ham_btn">
+      </div>
+    </div>
+  </header>
+  <div class="wrap">
+    <nav>
+      <a href="#">
+        <div><img src="../assets/image/svg/logo_rosalie.svg" alt="ロザリーのロゴ" width="150" height="70"></div>
+      </a>
+      <div class="nav_area_right">
+        <button class="nav_area_close">X</button>
+        <ul class="nav_list flex">
+          <li class="nav_list_item">
+            <a href="../index.html">Top</a>
+          </li>
+          <li class="nav_list_item">
+            <a href="../subPage_Concept/index.html">Concept</a>
+          </li>
+          <li class="nav_list_item">
+            <a href="../subPage_Flower/index.html">Flower</a>
+          </li>
+          <li class="current">
+            <a href="">Information</a>
+          </li>
+          <li class="nav_list_item">
+            <a href="../subPage_Contact/index.html">Contact</a>
+          </li>
+          <li class="nav_list_item">
+            <a href="../subPage_Gallery/index.html">Gallery</a>
+          </li>
+        </ul>
+        <div class="access_text">
+          <p>〒153-0051<br>
+            東京都目黒区上目黒3丁目4-1</p>
+          <p>中目黒駅より徒歩1分</p>
+          <p>TEL:03-1234-5678</p>
+          <p>Open:10:00/Close:19:00</p>
+          <p>定休日：木曜日</p>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="heading_deco flex">
+        <h2>Information</h2>
+        <p>
+          店舗の最新ニュースやお知らせ、スタッフのコラム、定休日のお知らせなどの情報をお届けします。<br />
+          新しい花の入荷情報やイベントのお知らせもこちらでご案内しております。
+        </p>
+      </div>
+      <div class="information_area">
+        <ul class="information_area_header flex">
+          <li class="information_area_header_item information_area_header_clicked flex"
+            onClick="filterCategory(event,'all')">
+            All
+          </li>
+          <li class="information_area_header_item flex" onClick="filterCategory(event,'information_area_news')">
+            News
+          </li>
+          <li class="information_area_header_item flex" onClick="filterCategory(event,'information_area_column')">
+            Column
+          </li>
+          <li class="information_area_header_item flex" onClick="filterCategory(event,'information_area_closed')">
+            Closed
+          </li>
+        </ul>
+        <ul class="information_area_content flex">
+          <li class="information_area_item information_area_closed flex">
+            <p class="information_area_item_date">2024.07.20（土）</p>
+            <img src="../assets/image/png/image_top_blog_01_153x138.png" alt="風鈴">
+            <p class="information_area_item_title">8月の定休日のお知らせ</p>
+            <p class="information_area_item_description">
+              ８月の定休日のお知らせです。８月は夏季休暇…
+            </p>
+          </li>
+          <li class="information_area_item information_area_news flex">
+            <p class="information_area_item_date">2024.07.17（水）</p>
+            <img src="../assets/image/png/image_top_blog_02_153x138.png" alt="トロピカルフラワー">
+            <p class="information_area_item_title">
+              トロピカルフェア開催中
+            </p>
+            <p class="information_area_item_description">
+              梅雨が明けて暑さも本格的になってまいりました。みなさんいかがお過ごしでしょうか。
+            </p>
+          </li>
+          <li class="information_area_item information_area_news flex">
+            <p class="information_area_item_date">2024.07.12（金）</p>
+            <img src="../assets/image/png/image_top_blog_03_153x138.png" alt="向日葵">
+            <p class="information_area_item_title">おすすめ向日葵 pick up!</p>
+            <p class="information_area_item_description">
+              夏の風物詩といえば、皆様は何を想像されるでし…
+            </p>
+          </li>
+          <li class="information_area_item information_area_column flex">
+            <p class="information_area_item_date">2024.07.01（月）</p>
+            <img src="../assets/image/png/image_top_blog_04_153x138.png" alt="茎をカット">
+            <p class="information_area_item_title">花を長く楽しむには</p>
+            <p class="information_area_item_description">
+              これからどんどん気温が高くなっていく中、心配…
+            </p>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <div id="page-top">
+      <div class="flex to-top">
+        <a href="#">
+          <img src="../assets/image/svg/btn_to_top_20x182.svg" alt="topに戻る" width="18" height="176" class="to_top_item">
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="flower_deco"></div>
+    <div class="footer_content_center">
+      <a href="../index.html">
+        <div class="flex footer_logo"><img src="../assets/image/svg/logo_rosalie.svg" alt="ロザリーのロゴ" width="120"
+            height="33">
+        </div>
+      </a>
+      <p>Open:10:00/Close:19:00</p>
+      <p>定休日：木曜日</p>
+      <a href="#">
+        <img src="../assets/image/svg/icon_insta_30x30.svg" alt="インスタのロゴ" width="30" height="30" class="insta_icon">
+      </a>
+      <p><small>&copy;2024 Rosalie All Rights Reserved.</small></p>
+    </div>
+    <div class="footer_content_right">
+      <div class="flex">
+        <a href="#">
+          <p>プライバシーポリシー</p>
+        </a>
+        <a href="#">
+          <p>会社概要</p>
+        </a>
+      </div>
+      <div class="footer_adress">
+        <p>〒153-0051<br>
+          東京都目黒区上目黒3丁目4-1</p>
+        <p>中目黒駅より徒歩1分</p>
+        <p>TEL:03-1234-5678</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
